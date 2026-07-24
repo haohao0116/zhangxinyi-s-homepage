@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张欣怡的个人主页</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.cn/css2?family=ZCOOL+XiaoWei&family=Caveat:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <style>
+    body { 
+      font-family: 'ZCOOL XiaoWei', 'PingFang SC', sans-serif;
+      background-color: #FFF8F0;
+      color: #4A3728;
+    }
+    .handwritten { font-family: 'Caveat', cursive; }
+    .handwritten-alt { font-family: 'Patrick Hand', cursive; }
+    
+    /* 手绘风格边框 */
+    .hand-drawn-border {
+      border: 3px dashed #E8DDD0;
+      border-radius: 20px;
+    }
+    
+    /* 卡片悬停效果 */
+    .card-hover {
+      transition: transform 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: rotate(-1deg) scale(1.02);
+    }
+    
+    /* 奖状边框 */
+    .award-border {
+      border: 5px solid #FFD166;
+      border-radius: 12px;
+      padding: 8px;
+      background: white;
+    }
+    
+    /* 图片边框 */
+    .photo-border {
+      border: 3px solid #B8A9E8;
+      border-radius: 12px;
+    }
+    
+    /* 滚动条样式 */
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #FFF8F0;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #FF9B71;
+      border-radius: 4px;
+    }
+    
+    /* 淡入动画 */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 0.6s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="min-h-screen">
+    <!-- Header -->
+    <header class="text-center py-12 px-4 animate-fade-in-up">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4" style="color: #FF9B71;">张欣怡</h1>
+      <p class="text-2xl md:text-3xl handwritten" style="color: #7EC8B8;">XinYi Zhang</p>
+      <p class="mt-4 text-lg">一个勇敢追梦的六年级女孩</p>
+    </header>
+
+    <!-- About Me -->
+    <section class="max-w-4xl mx-auto px-4 py-12 animate-fade-in-up">
+      <h2 class="text-3xl font-bold text-center mb-8" style="color: #FF9B71;">关于我</h2>
+      <div class="bg-white rounded-2xl p-8 shadow-lg hand-drawn-border card-hover">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784374560088_Wei_Xin_Tu_Pian_20260718192115_58_4_042f26fc.jpg?sign=1816402420-08f11efdc2-0-456c61fc0edc30571d4cc3915ba65f39707cf78fc1dc13202b4567b11da8a33b" 
+               alt="张欣怡" 
+               class="w-48 h-48 rounded-full object-cover" 
+               style="border: 5px solid #FFD166;">
+          <div class="flex-1">
+            <p class="text-lg leading-relaxed mb-4">
+              大家好！我叫张欣怡，今年 12 岁，是一名六年级的小学生。我性格开朗，喜欢画画、唱歌和朗诵。
+            </p>
+            <p class="text-lg leading-relaxed">
+              虽然我从小有一个特殊的"朋友"——菲弗综合症陪伴着我，但它并没有阻挡我追求梦想的脚步。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Journey -->
+    <section class="max-w-4xl mx-auto px-4 py-12 animate-fade-in-up">
+      <h2 class="text-3xl font-bold text-center mb-8" style="color: #FF9B71;">我的抗病故事</h2>
+      <div class="bg-white rounded-2xl p-8 shadow-lg hand-drawn-border card-hover">
+        <p class="text-lg leading-relaxed mb-6">
+          我从小伴随着一种罕见的菲弗综合症成长，经历了多次手术和治疗。
+        </p>
+        <p class="text-lg leading-relaxed mb-6">
+          我三个月时，在南京儿童医院接受了颅缝再造手术，历经6小时，闯过人生第一道难关。
+        </p>
+        <p class="text-lg leading-relaxed mb-6">
+          分别在六个月、一岁和六岁的时候，在重庆儿童医院和苏州儿童医院完成了三次手部矫治手术，针对性改善手指关节活动受限问题。数次手术与坚持，让我慢慢突破身体局限。
+        </p>
+        <p class="text-lg leading-relaxed mb-6">
+          虽然成长之路充满挑战，但我始终心怀热爱，从未松懈。现在，我已经能够坦然接纳自己的与众不同，带着善良与坚毅，继续前行。
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+          <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784636445257_Wei_Xin_Tu_Pian_20260721201743_625_99_c552331e.jpg?sign=1816402420-b0781d3824-0-d0c64acba756068e9a3e0aaf37d5c36a684e80b811fcc7b5da91143283110001" 
+               alt="抗病故事 1" 
+               class="rounded-lg photo-border">
+          <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784636452046_Wei_Xin_Tu_Pian_20260721201748_630_99_926f23ae.jpg?sign=1816402420-fb83dff7fe-0-36bbd51205baf19601e9f208ef4ba6e6b288ef67022d85d9ee0cc3b141321a70" 
+               alt="抗病故事 2" 
+               class="rounded-lg photo-border">
+          <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784642770241_ScreenShot_2026-07-21_215951_480_1d4a0174.png?sign=1816402420-2a1cc1cc16-0-7779430798f7796c6c366e65b93657dc80a247f86a457ff2a73d19c626726f54" 
+               alt="抗病故事 3" 
+               class="rounded-lg photo-border">
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="max-w-4xl mx-auto px-4 py-12 animate-fade-in-up">
+      <h2 class="text-3xl font-bold text-center mb-8" style="color: #FF9B71;">成绩与荣誉</h2>
+      <div class="bg-white rounded-2xl p-8 shadow-lg hand-drawn-border">
+        <div class="overflow-x-auto custom-scrollbar">
+          <div class="flex gap-4 pb-4" style="min-width: max-content;">
+            <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784474753629_Wei_Xin_Tu_Pian_20260719182348_63_4_c9b8926d.jpg?sign=1816402420-9e09faad03-0-e0de96afa8b5b8d93ee1b0d678ac9aa2db4340e8242b81ec2202d9f5e8dec859" 
+                 alt="奖状 1" 
+                 class="h-48 award-border">
+            <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784633270500_Wei_Xin_Tu_Pian_20260719182407_70_4_eabcaa70.jpg?sign=1816402420-b42f2cdccf-0-b9921cbb4237c4f4f6def76153cd7e50fabfec5d26d0c2dd6187bdc7de667ff2" 
+                 alt="奖状 2" 
+                 class="h-48 award-border">
+            <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784633339170_Wei_Xin_Tu_Pian_20260719182405_69_4_fb557d00.jpg?sign=1816402420-c7b885b0d2-0-d3737a211c39ee238aeea4e112514d931edc95c01ed18216b3fae91179f59d9a" 
+                 alt="奖状 3" 
+                 class="h-48 award-border">
+            <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784633462457_Wei_Xin_Tu_Pian_20260719182354_66_4_ce741560.jpg?sign=1816402420-aa70e1b202-0-d334f1940e1985384c11e74130560909348c505251f32f3709474415ec95e543" 
+                 alt="奖状 4" 
+                 class="h-48 award-border">
+            <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784633537057_Wei_Xin_Tu_Pian_20260719182352_65_4_02ff1232.jpg?sign=1816402420-a9b7ab01de-0-5361181071606f6b85ea57601d774dc75e89f466a7f5a1f8c688938a749a407b" 
+                 alt="奖状 5" 
+                 class="h-48 award-border">
+            <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784633655197_Wei_Xin_Tu_Pian_20260719182359_67_4_bbd2c24c.jpg?sign=1816402420-e0c9fa4fe0-0-ce6250e64a58c07224462dc3d44b572138d5dce36e554664fc1dd7c3f65241fd" 
+                 alt="奖状 6" 
+                 class="h-48 award-border">
+            <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784633726375_Wei_Xin_Tu_Pian_20260719182401_68_4_333b0483.jpg?sign=1816402421-474a2a7c53-0-fa834ff6ec27c7f52ae477bc2efa44e4f9cf48353aff1cfa490193fd8b3ede31" 
+                 alt="奖状 7" 
+                 class="h-48 award-border">
+            <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784633784097_Wei_Xin_Tu_Pian_20260719182350_64_4_954e8740.jpg?sign=1816402421-cc3d0e75c8-0-5bd334689692be1d4174fe8d0310cdd55674b19a9fa22ab6f148d10f81c9e6f6" 
+                 alt="奖状 8" 
+                 class="h-48 award-border">
+            <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784636774934_Wei_Xin_Tu_Pian_20260719182341_61_4_d7ac48a2.jpg?sign=1816402421-ce842d79d0-0-9f0de8a1a48a4cadea6916876ae2d6ded2370da3d2b6ed45bb051c69f4e527ea" 
+                 alt="奖状 9" 
+                 class="h-48 award-border">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="max-w-4xl mx-auto px-4 py-12 animate-fade-in-up">
+      <h2 class="text-3xl font-bold text-center mb-8" style="color: #FF9B71;">我擅长的事</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- 少儿朗诵四级 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hand-drawn-border card-hover">
+          <h3 class="text-xl font-bold mb-4" style="color: #7EC8B8;">少儿朗诵四级</h3>
+          <p class="text-gray-600 mb-4">朗诵是我热爱的艺术形式，通过声音传递情感。</p>
+          <video controls class="w-full rounded-lg" style="border: 3px solid #B8A9E8;">
+            <source src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/proxy_4bae9232?sign=1816402421-96bab06ffa-0-929bd764ad5e9c62e15b90f4f18eaa2c334ff717623641acdc21dc7e90130341" type="video/mp4">
+          </video>
+        </div>
+        
+        <!-- 画画 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hand-drawn-border card-hover">
+          <h3 class="text-xl font-bold mb-4" style="color: #7EC8B8;">画画</h3>
+          <p class="text-gray-600 mb-4">我喜欢用画笔记录生活中的美好瞬间。</p>
+          <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784639226905_Wei_Xin_Tu_Pian_20260721222654_634_99_479f86e9.jpg?sign=1816402421-1c60c66ec2-0-bee8e1d3511292532ff62edc0e848b99027eb2133cb5e713192d918639d694b6" 
+               alt="画画作品" 
+               class="w-full rounded-lg photo-border">
+        </div>
+        
+        <!-- 唱歌 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hand-drawn-border card-hover">
+          <h3 class="text-xl font-bold mb-4" style="color: #7EC8B8;">唱歌</h3>
+          <p class="text-gray-600 mb-4">音乐让我快乐，我喜欢用歌声表达心情。</p>
+          <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784639231591_Wei_Xin_Tu_Pian_20260721222659_635_99_203b9a84.jpg?sign=1816402421-85426eb974-0-cb04c0e7a360dce38de57f4292fa9b4ec9cbb21d975037788dc32615c9564f37" 
+               alt="唱歌" 
+               class="w-full rounded-lg photo-border">
+        </div>
+        
+        <!-- 书法 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hand-drawn-border card-hover">
+          <h3 class="text-xl font-bold mb-4" style="color: #7EC8B8;">书法</h3>
+          <p class="text-gray-600 mb-4">练习书法让我学会专注和耐心。</p>
+          <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784639236091_Wei_Xin_Tu_Pian_20260721222704_636_99_7e279e1a.jpg?sign=1816402421-ca2462bab4-0-f00461af57457dcf8e487d44332c2186bf4dac3c08ab6f3833d377cd0c8327b3" 
+               alt="书法作品" 
+               class="w-full rounded-lg photo-border">
+        </div>
+      </div>
+    </section>
+
+    <!-- Growth Diary -->
+    <section class="max-w-4xl mx-auto px-4 py-12 animate-fade-in-up">
+      <h2 class="text-3xl font-bold text-center mb-8" style="color: #FF9B71;">成长日记</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- 日记 1: 《光筑尖峰》 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hand-drawn-border card-hover">
+          <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784638506007_Wei_Xin_Tu_Pian_20260719182430_76_4_7849d562.jpg?sign=1816402421-1c60c66ec2-0-bee8e1d3511292532ff62edc0e848b99027eb2133cb5e713192d918639d694b6" 
+               alt="《光筑尖峰》" 
+               class="w-full rounded-lg photo-border mb-4">
+          <h3 class="text-xl font-bold mb-2" style="color: #7EC8B8;">《光筑尖峰》</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            我描绘四棱锥几何体，借助深浅不同的铅笔色调区分亮面、灰面与暗面。平凡的几何形体，在光影下拥有立体感，让我发现素描中明暗交织独特的魅力。
+          </p>
+          <p class="text-xs text-gray-400 mt-2">2026-07-21</p>
+        </div>
+        
+        <!-- 日记 2: 《长路与暖阳》 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hand-drawn-border card-hover">
+          <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784638403723_Wei_Xin_Tu_Pian_20260719182427_75_4_2dbf3b7f.jpg?sign=1816402421-85426eb974-0-cb04c0e7a360dce38de57f4292fa9b4ec9cbb21d975037788dc32615c9564f37" 
+               alt="《长路与暖阳》" 
+               class="w-full rounded-lg photo-border mb-4">
+          <h3 class="text-xl font-bold mb-2" style="color: #7EC8B8;">《长路与暖阳》</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            我画出一条通向夕阳的林间公路，两旁的树木沿着道路有序排布。远方的红日代表希望，漫漫长路代表成长。愿我们沿着道路，向着光勇敢前行。
+          </p>
+          <p class="text-xs text-gray-400 mt-2">2026-07-21</p>
+        </div>
+        
+        <!-- 日记 3: 纹韵古罐 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg hand-drawn-border card-hover">
+          <img src="https://coze-coding-project.tos.coze.site/coze_storage_7663782937581682715/uploads/1784638274351_Wei_Xin_Tu_Pian_20260719182421_73_4_6fb449d7.jpg?sign=1816402421-ca2462bab4-0-f00461af57457dcf8e487d44332c2186bf4dac3c08ab6f3833d377cd0c8327b3" 
+               alt="纹韵古罐" 
+               class="w-full rounded-lg photo-border mb-4">
+          <h3 class="text-xl font-bold mb-2" style="color: #7EC8B8;">纹韵古罐</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            我创作了一只布满花纹的陶罐，用长短线条、几何图案组合装饰瓶身。黑白纹样和彩色背景形成鲜明对比，搭配散落的果子，希望用丰富的装饰线条，展现传统纹样独特的魅力。
+          </p>
+          <p class="text-xs text-gray-400 mt-2">2026-07-21</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 px-4 mt-12" style="background-color: #FFFDF7;">
+      <p class="text-2xl handwritten" style="color: #FF9B71;">感谢你的关注！</p>
+      <p class="mt-2 text-gray-600">© 2026 张欣怡的个人主页</p>
+    </footer>
+  </div>
+</body>
+</html>
